@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e4ac3c6-52d0-424b-bd51-6966fc0c0423">
+  <producedTypes>
+    <selectionType typeId="641f638e-f430-4a66-bd94-4318760567de" valueTypeId="caafd355-384a-4003-be1c-edc59e91e108"/>
+    <listType typeId="39391807-028b-404a-a29f-7d53243f2c78" valueTypeId="cf5387ce-ccd7-493e-a38b-129ba4217610"/>
+    <managerType typeId="44b74cc8-3306-47c3-9c50-a106af3961db" valueTypeId="a047b5a0-6570-485b-82e1-ff7186fe0877"/>
+    <recordSetType typeId="93c0af2d-b6b7-4398-9f4b-deac662e1d7d" valueTypeId="5fb3d1fb-22cb-4845-9981-562357db5455"/>
+    <recordKeyType typeId="ca62a6c0-a4cb-4f5b-9fe1-fa1707126a9c" valueTypeId="52edd100-32b6-4511-a418-10806ce3e278"/>
+    <recordType typeId="a5b0ab83-c258-4290-8817-aff4f7e580fc" valueTypeId="3badbc79-d9cc-40cd-90c8-64cbe0768578"/>
+  </producedTypes>
+  <name>Продажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="77236194-be49-4188-acfa-dcafa9b1481a">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>20</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="960f217d-613a-47f5-a8b4-5274410d6343">
+    <name>КоличествоПроданныхТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество проданных товаров</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>20</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="581947ae-c0ad-436a-a846-06cf5b24941a">
+    <name>Продавец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продавец</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a35a2b9f-68a5-49fc-a283-dc7bbe81bf47">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Товар</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0fcc1c63-8ff3-4555-9b37-b229a4d11bd2">
+    <name>Покупатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Покупатели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

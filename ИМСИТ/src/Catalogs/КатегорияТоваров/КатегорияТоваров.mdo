@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0eb1c14-b5ad-4bed-b7cd-51187dfe97b5">
+  <producedTypes>
+    <objectType typeId="ce0fc935-5180-4095-be02-27a5a33c5178" valueTypeId="ad51cc74-cb88-4fca-80c2-ac6e2d0acd2c"/>
+    <refType typeId="443cef5e-da3b-41bd-bd5d-7ecc90e6f43c" valueTypeId="6cf3e5f6-57f1-4479-aaff-c47b4ec84e80"/>
+    <selectionType typeId="cb9ac1a1-906a-4303-a98b-ec0d52a7e66b" valueTypeId="f64a873e-98af-4e8d-8fc0-42efbae55999"/>
+    <listType typeId="f9cf8f6a-86b6-41fd-be5d-bcc7f4d61545" valueTypeId="7498f8f2-c17b-48ad-b846-e1f439e01d0b"/>
+    <managerType typeId="16eb7902-11fe-49bb-a1b0-7563dbed457d" valueTypeId="d5e3d2a2-5ab1-4f35-bfff-395058bd9bc7"/>
+  </producedTypes>
+  <name>КатегорияТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категория товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорияТоваров.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КатегорияТоваров.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ae8057c6-9f75-4587-ac2d-79c1c2259c91">
+    <name>РодительскаяКатегория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Родительская категория</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорияТоваров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

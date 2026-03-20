@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8667db5-0949-4fb2-bd88-92d935752f14">
+  <producedTypes>
+    <objectType typeId="0a4b27d0-df59-4dd7-9964-34f24b241b17" valueTypeId="4a765956-6e1b-45ee-808e-35534df6c160"/>
+    <managerType typeId="015021e4-50fe-40d3-ac42-49a3e4948f7e" valueTypeId="0e02276f-e6a2-4212-8e7a-73726291f60e"/>
+  </producedTypes>
+  <name>ПопулярныеТовары</name>
+  <synonym>
+    <key>ru</key>
+    <value>Популярные товары</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПопулярныеТовары.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="87ee926a-eaa9-4545-9807-8a3e7f99c3dc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
